@@ -8,6 +8,11 @@ public class Main {
 
         UserRepository users = new UserRepository();
 
+        System.out.println("Jon Bertelsen SHA-1: " + Util.encryptThisString("123"));
+        System.out.println("Jønke SHA-1: " + Util.encryptThisString("321"));
+        System.out.println("Blondie SHA-1: " + Util.encryptThisString("456"));
+
+
         boolean oneMore = true;
 
         while (oneMore)

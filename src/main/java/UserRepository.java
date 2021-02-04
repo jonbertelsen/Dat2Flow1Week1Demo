@@ -21,7 +21,7 @@ public class UserRepository {
         User user = userMap.get(userName);
         if (user != null)
         {
-           return user.getPassword().equals(password);
+           return user.getPassword().equals(Util.encryptThisString(password));
 
         }
         else
